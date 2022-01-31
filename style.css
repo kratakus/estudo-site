@@ -57,38 +57,45 @@ main {
 }
 
 section.primeirasection {
-    position: relative;
+    display: flex;
+    align-content: center;
     width: auto;
-    height: 400px;
-    padding: 20px;
-    background-color: rgb(6, 49, 6);
-   
+    height:  400px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .tituloprincipal {
-    width: auto;
-    max-width: 500px;
-    height: 400px;
-    background-color: darkgreen;
-    color: white;
-    padding: 0px 10px 0px 10px ;
-    font-family:"Poppins", sans-serif ;
-
-    
-    
+    background-color: rgb(255, 255, 255);
+    color: rgb(14, 9, 9);
+    padding: 0px 20px ;
+    font-family:"Poppins", sans-serif;
+    flex: 1 1 300px;
+    text-align: justify;
+    text-indent: 5px;
 
 }
-
-@media (max-width: 375px) {
-
-    nav {
-        display: none;
-        
-    }
-
-    header {
-        flex-direction: column-reverse;
-    }
-
+ 
+.tituloprincipal h1 {
+    color: rgb(12, 71, 12);
+    font-size: 1.5em;
+    padding-bottom: 20px;
+    text-align: center;
 }
+
+.tituloprincipal p {
+    font-weight:500;
+}
+
+.imagemprincipal {
+   flex: 7 1 300px;
+}
+
+img {
+   width: 100%;
+}
+
+
 
